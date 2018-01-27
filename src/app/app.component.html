@@ -1,0 +1,24 @@
+<!-- <div class="jumbotron">hello
+
+
+</div> -->
+<md-toolbar color="primary" ><span>GameViewer</span></md-toolbar>
+<md-tab-group>
+  <md-tab label="Gallery">
+    <md-card width="500px" *ngFor="let spacescreen of spacescreens">
+<img md-card-image src="{{spacescreen.img}}">
+    <md-card-content>
+      <p>{{spacescreen.description}}</p>
+    </md-card-content>
+    <md-card-actions>
+<button md-button color=""><md-icon>delete</md-icon></button> 
+
+    </md-card-actions>
+    <md-slide-toggle>slidetoggle</md-slide-toggle>
+    </md-card>
+  </md-tab>
+  <md-tab label="Settings"></md-tab>
+  
+  
+</md-tab-group>
+
